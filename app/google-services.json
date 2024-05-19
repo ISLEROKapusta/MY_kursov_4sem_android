@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "930671674121",
+    "project_id": "registradl",
+    "storage_bucket": "registradl.appspot.com",
+    "firebase_url":"https://registradl-default-rtdb.europe-west1.firebasedatabase.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930671674121:android:ef1a7299ae4975c7acc9d8",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationkurs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhFdX3cfPIzb_5pWljW2h76YEsBYlWXZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

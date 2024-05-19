@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_about_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание программы"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+    <!-- Описание программы -->
+    <TextView
+        android:id="@+id/text_program_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Данная программа является удобным органайзером способным в удобном формате отображать денежные операции, введенные пользователем. Также данные сохраняются в облаке, что позволяет открыть свои данные на любом устройстве с доступом в интернет."
+        android:layout_below="@id/text_about_program"
+        android:layout_alignStart="@id/text_about_program"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:typeface="monospace"
+        android:textStyle="normal"
+        />
+
+    <!-- Инструкция пользователя -->
+    <TextView
+        android:id="@+id/text_user_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_program_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Инструкция пользователю"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <!-- Навигационные инструкции -->
+    <TextView
+        android:id="@+id/text_navigation_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_instructions"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Для навигации по приложению требуется использовать навигационное меню в низу страницы, где первый символ возвращает пользователя на главный экран, второй показывает график по списку операций (данный график можно прокрутить нажатием по нему) , третья иконка открывает информационную справку, а последняя позволяет выйти из аккаунта. Главная страница имеет в самом верху общее отображение средств на балансе, под этим элемент список всех добавленных элементов с возможностью их удаления по нажатию на иконку корзина, а над навигацией меню ввода новой транзакции с выбором пополнения или затраты на иконку рубля с вводом суммы и комментария к переводу. Начальная страница с логином пользователя позволяет войти в приложение и сделать новый аккаунт (учтите пароль не меньше 7 символов и вход только по почте)."
+        android:typeface="monospace"
+        android:textStyle="normal" />
+
+    <!-- Данные об авторе -->
+    <RelativeLayout
+        android:id="@+id/layout_author_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_navigation_instructions"
+        android:layout_alignStart="@id/text_user_instructions"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <!-- Фото или аватарка -->
+        <ImageView
+            android:id="@+id/image_author_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/myphoto"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Фамилия и инициалы -->
+
+        <!-- Группа -->
+        <TextView
+            android:id="@+id/text_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_author_photo"
+            android:layout_alignStart="@id/image_author_photo"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="-95dp"
+            android:text="Митрофанов П.Д."
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_author_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_author_name"
+            android:layout_alignStart="@id/text_author_name"
+            android:layout_marginTop="16dp"
+            android:text="ИКБО-13-22" android:textStyle="bold"/>
+
+        <!-- Год разработки -->
+        <TextView
+            android:id="@+id/text_development_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_author_group"
+            android:layout_alignStart="@id/text_author_group"
+            android:layout_marginTop="16dp"
+            android:text="18.05.2024" android:textStyle="bold"/>
+
+        <!-- Почта для связи -->
+        <TextView
+            android:id="@+id/text_author_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_development_year"
+            android:layout_alignStart="@id/text_development_year"
+            android:layout_marginTop="16dp"
+            android:text="mitrofanov.p.d1@edu.mirea.ru" android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

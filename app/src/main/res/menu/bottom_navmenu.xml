@@ -1,0 +1,18 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title=""
+        android:icon="@drawable/round_add_home_24"
+        android:id="@+id/home"/>
+    <item android:title=""
+        android:icon="@drawable/baseline_equalizer_24"
+        android:id="@+id/graph"/>
+    <item android:title=""
+        android:icon="@drawable/round_fmd_bad_24"
+        android:id="@+id/information"/>
+    <item android:title=""
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:id="@+id/exit"
+        />
+</menu>
