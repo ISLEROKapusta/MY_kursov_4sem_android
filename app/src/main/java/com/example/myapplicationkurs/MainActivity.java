@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 binding.frameLayout.setVisibility(View.VISIBLE);
                 replaceFragment(new info());
             } else if (itemId == R.id.exit) {
+                saveData();
                 mAuth.signOut();
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
@@ -348,7 +349,12 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         saveData();  // Save data to Firebase when the activity is stopped
     }
+    @Override
+    protected void onPause() {
 
+        super.onPause();
+        saveData();
+    }
 
     private void saveData() {
         FirebaseUser user = mAuth.getCurrentUser();
